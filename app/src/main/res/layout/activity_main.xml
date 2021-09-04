@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    >
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e-mail"
+        />
+
+    <EditText
+        android:layout_below="@id/email"
+        android:id="@+id/contaseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/contaseña"
+        android:id="@+id/iniciar_cesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <Button
+        android:gravity="right"
+        android:layout_below="@id/iniciar_cesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Cesion"
+        android:onClick="onClickInicio"
+        />
+
+</RelativeLayout>
